@@ -1,6 +1,4 @@
-﻿using InsuranceApi.Domain.Entities;
-
-namespace InsuranceApi.Data.Seed;
+﻿namespace InsuranceApi.Data.Seed;
 
 public static class PolicySeed
 {
@@ -16,9 +14,9 @@ public static class PolicySeed
         CoverageAmount = 0.4m,
         Status = "Status",
         CreatedAt = DateTime.Now,
-        UpdatedAt = DateTime.Now,
+        UpdatedAt = DateTime.Now
     };
-    
+
     public static readonly Policy Policy02 = new()
     {
         Id = 2,
@@ -31,9 +29,9 @@ public static class PolicySeed
         CoverageAmount = 0.5m,
         Status = "Status",
         CreatedAt = DateTime.Now,
-        UpdatedAt = DateTime.Now,
+        UpdatedAt = DateTime.Now
     };
-    
+
     public static readonly Policy Policy03 = new()
     {
         Id = 3,
@@ -46,6 +44,6 @@ public static class PolicySeed
         CoverageAmount = 0.6m,
         Status = "Status",
         CreatedAt = DateTime.Now,
-        UpdatedAt = DateTime.Now,
+        UpdatedAt = DateTime.Now
     };
 }

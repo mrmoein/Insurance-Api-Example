@@ -1,7 +1,4 @@
-﻿using InsuranceApi.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-
-namespace InsuranceApi.Data;
+﻿namespace InsuranceApi.Data;
 
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
 {

@@ -1,5 +1,4 @@
-﻿using InsuranceApi.Domain.Entities;
-using InsuranceApi.Domain.Enum;
+﻿using InsuranceApi.Domain.Enum;
 
 namespace InsuranceApi.Data.Seed;
 
@@ -11,6 +10,6 @@ public static class CustomerSeed
         DateOfBirth = DateTime.Now.AddYears(-24),
         Gender = Gender.Male,
         CreatedAt = DateTime.Now,
-        UpdatedAt = DateTime.Now,
+        UpdatedAt = DateTime.Now
     };
 }

@@ -1,5 +1,4 @@
-﻿using InsuranceApi.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace InsuranceApi;
@@ -11,6 +10,10 @@ public static class DependencyInjection
         IConfiguration configuration
     )
     {
+        services.AddControllers();
+
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
         var applicationConnString = configuration.GetConnectionString("DefaultConnection");
 
         services.AddDbContext<ApplicationDbContext>(

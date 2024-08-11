@@ -7,7 +7,7 @@ public class Agent : BaseAuditableEntity
 {
     [Key]
     public int Id { get; set; }
-    
+
     [MaxLength(36)]
     public string LicenseNumber { get; set; }
 

@@ -1,6 +1,4 @@
 ﻿using InsuranceApi.Data.Seed;
-using InsuranceApi.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace InsuranceApi.Data;
 
@@ -48,10 +46,7 @@ public class ApplicationDbContextInitialiser(
     {
         var isExist = await context.Users.AnyAsync(u => u.Id == user.Id);
 
-        if (!isExist)
-        {
-            context.Users.Add(user);
-        }
+        if (!isExist) context.Users.Add(user);
     }
 
     private async Task AddUsers()
@@ -64,20 +59,14 @@ public class ApplicationDbContextInitialiser(
     {
         var isExist = await context.Agents.AnyAsync(u => u.Id == agent.Id);
 
-        if (!isExist)
-        {
-            context.Agents.Add(agent);
-        }
+        if (!isExist) context.Agents.Add(agent);
     }
 
     private async Task AddCustomer(Customer customer)
     {
         var isExist = await context.Customers.AnyAsync(u => u.Id == customer.Id);
 
-        if (!isExist)
-        {
-            context.Customers.Add(customer);
-        }
+        if (!isExist) context.Customers.Add(customer);
     }
 
     private async Task AddPolicies()
@@ -91,9 +80,6 @@ public class ApplicationDbContextInitialiser(
     {
         var isExist = await context.Policies.AnyAsync(u => u.Id == policy.Id);
 
-        if (!isExist)
-        {
-            context.Policies.Add(policy);
-        }
+        if (!isExist) context.Policies.Add(policy);
     }
 }

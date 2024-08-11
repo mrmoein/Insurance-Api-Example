@@ -1,6 +1,4 @@
-﻿using InsuranceApi.Domain.Entities;
-
-namespace InsuranceApi.Data.Seed;
+﻿namespace InsuranceApi.Data.Seed;
 
 public static class AgentSeed
 {
@@ -9,6 +7,6 @@ public static class AgentSeed
         Id = UserSeed.Moein.Id,
         LicenseNumber = "f3333333333",
         CreatedAt = DateTime.Now,
-        UpdatedAt = DateTime.Now,
+        UpdatedAt = DateTime.Now
     };
 }
