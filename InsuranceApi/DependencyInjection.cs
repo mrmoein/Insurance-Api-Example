@@ -11,6 +11,7 @@ public static class DependencyInjection
     )
     {
         services.AddControllers();
+        services.AddMemoryCache();
 
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
@@ -31,13 +32,7 @@ public static class DependencyInjection
         services.AddScoped<ApplicationDbContextInitialiser>();
 
         services.AddMiniProfiler(
-                options =>
-                {
-                    options.RouteBasePath = "/profiler";
-                    options.IgnoredPaths.Add("/css");
-                    options.IgnoredPaths.Add("/js");
-                    options.IgnoredPaths.Add("/index.html");
-                }
+                options => { options.RouteBasePath = "/profiler"; }
             )
             .AddEntityFramework();
 
