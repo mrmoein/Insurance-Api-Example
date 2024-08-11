@@ -63,6 +63,6 @@ The `PolicyDocuments` table stores references to documents related to policies, 
 - **Policies → Claims**: A policy can have multiple claims.
 - **Policies → Payments**: A policy can have multiple payments.
 - **Policies → Beneficiaries**: A policy can have multiple beneficiaries.
+- **Policies → PolicyDocuments**: A policy can have multiple related documents.
 - **Customers → CustomerAgents**: A customer can have one assigned agent.
 - **Agents → CustomerAgents**: An agent can be assigned to multiple customers.
-- **Policies → PolicyDocuments**: A policy can have multiple related documents.
