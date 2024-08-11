@@ -60,9 +60,9 @@ The `PolicyDocuments` table stores references to documents related to policies, 
 - **Users → Customers**: The `Users` table is referenced by the `Customers` table to store customer-specific data.
 - **Users → Agents**: The `Users` table is referenced by the `Agents` table to store agent-specific data.
 - **Customers → Policies**: A customer can have multiple policies.
+- **Customers → CustomerAgents**: A customer can have one assigned agent.
+- **Agents → CustomerAgents**: An agent can be assigned to multiple customers.
 - **Policies → Claims**: A policy can have multiple claims.
 - **Policies → Payments**: A policy can have multiple payments.
 - **Policies → Beneficiaries**: A policy can have multiple beneficiaries.
 - **Policies → PolicyDocuments**: A policy can have multiple related documents.
-- **Customers → CustomerAgents**: A customer can have one assigned agent.
-- **Agents → CustomerAgents**: An agent can be assigned to multiple customers.
